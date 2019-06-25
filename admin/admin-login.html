@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Admin Login</title>
+	
+	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../font-awesome/css/all.css">
+
+	<style type="text/css">
+		body {
+			font-family: 'Nunito';
+			background: url(../assets/images/Admin-Background.jpg)no-repeat;
+			background-size: 100%;
+		}
+
+		.logo {
+			width: auto;
+			height: auto;
+			padding: 10px;
+			margin-left: 50px;
+			color: #fff;
+			box-shadow: 1px 1px 3px solid rgba(10,10,10,0.5);
+		}
+
+		#login-block {
+			margin: 8.5% 41%;
+			width: 325px;
+			height: 350px;
+			background: #fff;
+			border-radius: 25px;
+			position: absolute;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.35);
+		}
+
+		.text-title {
+			text-align: center;
+			text-transform: uppercase;
+			color: #015AA6;
+			font-size: 24px;
+			line-height: 30px;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+		}
+
+		.login {
+			padding: 10% 10%;
+			color: #015AA6;
+		}
+
+		.fa-user, .fa-key {
+			margin-right: 10px;
+			font-size: 25px;
+			text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+		}
+
+		#username {
+			width: 200px;
+			height: 5px;
+			border: none;
+			border-bottom: 1px solid #015AA6;
+			padding: 10px;
+		}
+
+		.username-block {
+			margin-bottom: 15px;
+		}
+
+		#password {
+			width: 200px;
+			height: 5px;
+			border: none;
+			border-bottom: 1px solid #015AA6;
+			padding: 10px;
+		}
+
+		.password-block {
+			margin-bottom: 15px;
+		}
+
+		.btn-submit {
+			margin: 15px 32.5%;
+			background-color: #015AA6;
+			color: #fff;
+			border: none;
+			padding: 10px 25px;
+			border-radius: 10px;
+		}
+
+		.text-forget-password {
+			margin: -10px 0;
+			margin-left: 31.5%;
+			text-decoration: none;
+			color: #015AA6;
+			text-shadow: 1px 1px 1px solid rgba(0.0.0.0.5);
+			text-align: center;
+			font-size: 12px;
+		}
+
+		.btn-submit:hover {
+			padding: 11px 25px;
+			cursor: pointer;
+			box-shadow: 5px 5px 10px solid rgba(25,25,25,1);
+		}
+
+		@media screen and (max-width: 600px) {
+			body {
+				background-size: 100%;
+				position: absolute;
+			}
+
+			#top-bar {
+				width: 100%;
+				height: auto;
+				padding: 15px 0;
+				color: #fff;
+				box-shadow: 1px 1px 5px rgba(10.10.10.0.3);
+				margin-left: 107%;
+			}
+
+			.logo {
+				width: auto;
+				height: auto;
+				padding: 10px;
+			}
+
+			#login-block {
+				margin: 8.5% 7%;
+				width: 275px;
+				height: auto;
+			}
+
+			.text-forget-password {
+				margin-left: 31%;
+			}
+
+			.fa-user, .fa-key {
+				margin: none;
+				display: none;
+			}
+
+			.username-block {
+				margin: 0px 0;
+				padding: 25px 0;
+			}
+
+			.password-block {
+				margin-bottom: 25px 0;
+				padding-bottom: 25px 0;
+			}
+
+			.username, .password {
+				/*height: 50px;*/
+			}
+
+		}
+	</style>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/d3js/5.9.0/d3.min.js"></script> 
+
+</head>
+<body>
+	<section>
+		<div id="top-bar">
+			<div class="logo">
+				<h1><i class="fab fa-accusoft" style="margin-right: 10px;"></i>Logo</h1>
+			</div>
+		</div>
+		<div id="login-block">
+			<h1 class="text-title">Admin Login</h1>
+			<div class="login">
+				<form>
+					<div class="username-block">
+						<i class="fas fa-user"></i>
+						<input type="username" name="username" placeholder="Username" id="username">
+					</div>
+					<div class="password-block">
+						<i class="fas fa-key"></i>
+						<input type="password" name="password" placeholder="Password" id="password">
+					</div>
+					<button class="btn-submit">Submit</button>
+					<a href="#" class="text-forget-password">Forget Password ?</a>
+				</form>
+				
+			</div>
+		</div>
+	</section>
+</body>
+</html>	
