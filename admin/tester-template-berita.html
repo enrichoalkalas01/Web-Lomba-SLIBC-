@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Template Berita</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+	<style type="text/css">
+		body {
+			margin: 0;
+			padding: 1% 20%;
+			font-family: sans-serif;
+			background: #0984e3;
+			color: #2d3436;
+		}
+
+		.col-md-12 {
+			background: #fff;
+			border-radius: 10px;
+		}
+
+		.image-banner {
+			width: 100%;
+			height: 450px;
+			background: #000;
+			background: url('image-tester.jpg');
+			background-size: 100%;
+			background: cover;
+			border-radius: 0 0 10px 10px;
+			box-shadow: 0px 3px 10px rgba(25,25,25,0.5);
+		}
+
+		.main-field {
+			width: auto;
+			padding: 15px 2.5%;
+		}
+
+		.fab {
+			font-size: 30px;
+			color: #0984e3;
+			text-shadow: 1px 1px 3px rgba(25,25,25,0.3);
+			margin: 0 2.5px;
+		}
+
+		.fab:hover {
+			transition: .3s;
+			color: #636e72;
+		}
+
+		.button-block {
+			width: auto;
+			height: auto;
+			padding: 10px 0;
+		}
+
+		.button-share {
+			padding-left: 10px;
+		}
+
+		.button-share, .button-regis,
+		.col-md-10, .col-md-2 {
+			padding: 5px 0;
+		}
+
+		.col-md-10 {
+			padding: 0 15px;
+		}
+
+		.col-md-2 {
+			padding-right: 15px;
+		}
+
+		.register-btn {
+			color: #fff;
+			text-decoration: none;
+			background-color: #0984e3;
+			border: 1px solid #0984e3;
+			padding: 10px 25px;
+			border-radius: 10px;
+			box-shadow: 3px 5px 10px rgba(9, 132, 227,0.2);
+		}
+
+		.register-btn:hover {
+			color: #fff;
+			text-decoration: none;
+			background-color: #636e72;
+			border: 1px solid #636e72;
+		}
+
+		@media screen and (max-width: 1280px) {
+			.image-banner {
+				height: 350px;
+			}
+
+			.btn-regis {
+				margin-left: -10px;
+			}
+
+			.register-btn {
+				font-size: 12px;
+				padding: 10px 10px;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="image-banner"></div>
+						<div class="main-field">
+							<h1 style="padding: 25px 0;text-align: center; text-transform: uppercase; font-size: 24px; font-weight: 700;"><span>Ini Judul Berita</span></h1>
+							<div class="description">
+								<h4>Description</h4>
+								<p>
+									<span>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										<br><br>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+										<br><br>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</span>
+									<br>
+									<span>
+										<ol style="padding-left: 20px;">
+											<li style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</li>
+											<li style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</li>
+											<li style="margin-bottom: 10px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat.</li>
+										</ol>
+									</span>
+								</p>
+							</div>
+							<div class="button-block">
+								<div class="row">
+									<div class="col-md-10">
+										<div class="button-share">
+											<a href="#"><i class="fab fa-twitter-square"></i></a>
+											<a href="#"><i class="fab fa-facebook-square"></i></a>
+											<a href="#"><i class="fab fa-whatsapp-square"></i></a>
+											<a href="#"><i class="fab fa-line"></i></a>
+											<a href="#"><i class="fab fa-instagram"></i></a>
+										</div>
+									</div>
+									<div class="col-md-2">
+										<div class="button-regis">
+											<a href="#" class="register-btn">Register Here</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	
+</script>
+</html>
